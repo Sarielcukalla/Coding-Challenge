@@ -18,9 +18,9 @@ public class TeflPage extends abstractComponent {
 
     @FindBy(css = "a[class='btn btn-cta-front']")
     WebElement regBtn;
-    @FindBy(id = "firstname-7e41dfc9-38a4-4a26-84a2-e9b31a7847e7_6371")
+    @FindBy(name = "firstname")
     WebElement nameReg;
-    @FindBy(id = "lastname-7e41dfc9-38a4-4a26-84a2-e9b31a7847e7_6371")
+    @FindBy(name = "lastname")
     WebElement lastNameReg;
     @FindBy(xpath = "//input[@autocomplete='email']")
     WebElement emailReg;

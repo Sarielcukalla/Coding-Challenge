@@ -12,9 +12,8 @@ public class JobsTest extends BaseTest {
     public void testJobsSubmit() throws InterruptedException, IOException {
         launchApplication();
         landingPage.loginApplication("cukallasariel@gmail.com", "S12345678");
-        HomePage page = new HomePage(driver);
-        page.goToHomePage();
         JobsBoard jobsBoard = new JobsBoard(driver);
+        jobsBoard.goToHomePage();
         jobsBoard.goToJobsBoard();
         jobsBoard.selectCountry("Alb");
         jobsBoard.selectPosition("Preschool & Early Childhood");

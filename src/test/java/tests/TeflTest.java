@@ -12,6 +12,7 @@ public class TeflTest extends BaseTest {
     @Test
     public void testAppTefl() throws InterruptedException, IOException {
         launchApplication();
+
         landingPage.goTo();
         landingPage.loginApplication("cukallasariel@gmail.com", "S12345678");
         HomePage page = new HomePage(driver);

@@ -23,14 +23,11 @@ public class StandAloneTest {
         driver.manage().window().maximize();
         driver.get("https://www.teachaway.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
-
         driver.findElement(By.id("login")).click();
         driver.findElement(By.name("username")).sendKeys("cukallasariel@gmail.com");
         driver.findElement(By.name("password")).sendKeys("S12345678");
         driver.findElement(By.id("login_action")).click();
         Thread.sleep(5000);
-
         driver.findElement(By.xpath("(//img[@alt='Teach Away logo'])[1]")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ub-emb-close")));

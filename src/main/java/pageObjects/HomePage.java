@@ -16,22 +16,4 @@ public class HomePage extends abstractComponent {
 
     }
 
-    @FindBy(xpath = "(//img[@alt='Teach Away logo'])[1]")
-    WebElement logoBtn;
-    @FindBy(css = ".ub-emb-close")
-    WebElement btnClose;
-    @FindBy(id = "hs-eu-confirmation-button")
-    WebElement alertConf;
-
-    By userProfile = By.cssSelector(".user-menu");
-
-    public void goToHomePage() {
-        waitForElementToAppear(userProfile);
-        logoBtn.click();
-        waitForWebElementToAppear(btnClose);
-        btnClose.click();
-        waitForWebElementToAppear(alertConf);
-        alertConf.click();
-    }
-
 }
